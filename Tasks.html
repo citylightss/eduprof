@@ -138,6 +138,20 @@ function findTwin(nums) {
     }
 }
 }
+        
+        
+// Задача 10
+// Напишите код, который принимает от пользователя фамилию, имя и отчество, а затем выводит на экран фамилию и инициалы (без пробела между инициалами).
+
+let name = prompt('Введите имя');
+let secondName = prompt('Введите отество');
+let surname = prompt('Введите фамилию');
+let nameArr = Array.from(name);
+let secondNameArr = Array.from(secondName);
+let firstItem = nameArr.shift();
+let secondItem = secondNameArr.shift();
+
+document.write(surname + ' ' + firstItem + '.' + secondItem + '.')
 
 
 
