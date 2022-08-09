@@ -143,16 +143,93 @@ function findTwin(nums) {
 // Задача 10
 // Напишите код, который принимает от пользователя фамилию, имя и отчество, а затем выводит на экран фамилию и инициалы (без пробела между инициалами).
 
-let name = prompt('Введите имя');
-let secondName = prompt('Введите отество');
-let surname = prompt('Введите фамилию');
-let nameArr = Array.from(name);
-let secondNameArr = Array.from(secondName);
-let firstItem = nameArr.shift();
-let secondItem = secondNameArr.shift();
+// let name = prompt('Введите имя');
+// let secondName = prompt('Введите отество');
+// let surname = prompt('Введите фамилию');
+// let nameArr = Array.from(name);
+// let secondNameArr = Array.from(secondName);
+// let firstItem = nameArr.shift();
+// let secondItem = secondNameArr.shift();
 
-document.write(surname + ' ' + firstItem + '.' + secondItem + '.')
+// document.write(surname + ' ' + firstItem + '.' + secondItem + '.')
 
+        
+// Задача 11
+// Сделайте функцию, которая параметрами принимает 2 числа. Если эти числа равны - пусть функция вернет true, а если не равны - false.
+
+// function Equality(a, b) {
+//     if (+a === +b) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(Equality(5, 10))
+// console.log(Equality(5, 5))
+// console.log(Equality('yes', 'yes'))
+
+
+// Задача 12
+// Сделайте функцию, которая параметром принимает число и проверяет - отрицательное оно или нет. Если отрицательное - пусть функция вернет true, а если нет - false.
+
+// function negativeNumber (a) {
+//     if (a < 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(negativeNumber(2));
+// console.log(negativeNumber(-2)); 
+// console.log(negativeNumber(0));
+
+
+// Задача 13 
+// Сделайте функцию arrayFill, которая будет заполнять массив заданными значениями. 
+// Первым параметром функция принимает значение, которым заполнять массив, а вторым - сколько элементов должно быть в массиве. 
+// Пример: arrayFill('x', 5) сделает массив вида ['x', 'x', 'x', 'x', 'x'].
+// Оформите вывод в alert.
+
+
+// function arrayFill(value, length) {
+//     let myArr = new Array(length).fill(value)
+//     console.log(myArr);
+// }
+// console.log(arrayFill('x', 5));
+// console.log(arrayFill('y', 10));
+
+
+// Задача 14
+// Даны картинки. Привяжите к каждой картинке событие, чтобы по клику на картинку алертом выводился ее src. К решению прикрепите полный текст html документа.
+
+// <div class="pic_1"><img src="/Pics/Compressed/companion-dog-breed-king-charles-spaniel-calmly-sitting-isolated-over-white-studio-background.jpg" alt="" onclick="alert(this.src)"></div>
+// <div class="pic_2"><img src="/Pics/Compressed/portrait-of-beautiful-furry-cat-posing.jpg" alt="" onclick="alert(this.src)"></div>
+// <div class="pic_3"><img src="/Pics/Compressed/the-cat-on-white-background.jpg" alt="" onclick="alert(this.src)"></div>
+
+
+// Задача 15
+// Создайте два инпута и кнопку. (Пример ниже). Создайте функцию, которая при нажатии на кнопку будет во втором инпуте выводить,  введенный пользователем, квадрат числа из первого инпута.
+
+// <div class="container">
+// <div class="row">
+// <input type="text" placeholder="Введите число!" id="giveNum">
+// <input type="text" placeholder="Здесь появится результат" id="getResult">
+// <button id="btnme" onclick="pushToGetResult()">Нажми на меня</button>
+// </div>
+// </div>
+// <script>
+
+// function pushToGetResult() {
+// let btnme = document.getElementById("btnme");
+// let giveNum = document.getElementById('giveNum');
+// let getResult = document.getElementById('getResult');
+
+// btnme.addEventListener('click', function () {
+// getResult.value = Math.pow(giveNum.value, 2);
+// })
+//
+// Задача 16
+// Составьте SQL запрос который получит все данные из таблицы products. В решении нужно прислать только сам запрос.
 
 
 
