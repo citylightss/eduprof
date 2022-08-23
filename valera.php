@@ -25,7 +25,7 @@ class Person {
       return $this->father; 
    }
    function getInfo() {
-    return "<h3>Hey there! Let me speak from the bottom of my heart.</h3><br>". "My name is <b>".$this->getName()."</b>. I`m a teen from Russia and I`v got big lovely family. A few words about them. My father`s name is <b>".$this->getFather()->getName()."</b> and mother`s - <b>".$this->getMother()->getName()."</b>.<br><br>". "Of course my parents have their own parents. They are my gramps. My dad`s parents are <b>".$this->getFather()->getFather()->getName()."</b> and <b>".$this->getFather()->getMother()->getName()."</b> and mom's parents are <b>".$this->getMother()->getFather()->getName()."</b> and <b>".$this->getMother()->getMother()->getName()."</b>."
+    return "<h3>Hi there! Let me speak from my heart &#169;.</h3><br>". "My name is <b>".$this->getName()."</b>. I`m a teen from Russia and I`v got big lovely family. A few words about them. My father`s name is <b>".$this->getFather()->getName()."</b> and mother`s - <b>".$this->getMother()->getName()."</b>.<br><br>". "Of course my parents have their own parents. They are my gramps. My dad`s parents are <b>".$this->getFather()->getFather()->getName()."</b> and <b>".$this->getFather()->getMother()->getName()."</b> and mom's parents are <b>".$this->getMother()->getFather()->getName()."</b> and <b>".$this->getMother()->getMother()->getName()."</b>."
       ;
 }
 }
